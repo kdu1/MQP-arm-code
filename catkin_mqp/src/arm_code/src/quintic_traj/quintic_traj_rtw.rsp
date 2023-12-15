@@ -1,0 +1,6 @@
+﻿rt_nonfinite.obj
+rtGetNaN.obj
+rtGetInf.obj
+quintic_traj_initialize.obj
+quintic_traj_terminate.obj
+quintic_traj.obj

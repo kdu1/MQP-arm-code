@@ -1,0 +1,8 @@
+prefix=/home/vboxuser/catkin_mqp/install
+
+Name: arm_code
+Description: Description of arm_code
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -larm_code
+Requires: roscpp rospy std_msgs

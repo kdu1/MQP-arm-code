@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "valarray": "cpp",
+        "complex": "cpp",
+        "cmath": "cpp"
+    }
+}
