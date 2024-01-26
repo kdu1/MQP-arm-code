@@ -7,14 +7,14 @@ The main file is Robot.cpp, with functions for writing to the hid device using h
 ## Problems:
 Trouble including hidapi, does not seem to recognize the api. 
 
-## Tried:
+### Tried:
 sudo apt-get install libusb-dev
 sudo apt-get install libusb-1.0-0
 
 ### used the include statements:
--include <hidapi.h>
--include <hidapi/hidapi.h>
--include <libusb.h>
--include <hidapi_libusb.h>
+- include <hidapi.h>
+- include <hidapi/hidapi.h>
+- include <libusb.h>
+- include <hidapi_libusb.h>
 
 May be an issue with CMakeLists.txt
