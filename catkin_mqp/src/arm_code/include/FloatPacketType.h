@@ -1,24 +1,28 @@
 #include <vector>
 #include <cstdint> 
+#include <cstring>
 
 //every PacketType will just be FloatPacketType
 class FloatPacketType{
     private:
-        std::vector<double> downstream;
-        std::vector<double> upstream;
-        bool oneShotMode = false;
-        bool oneShotDone = false;
+        
         
     protected:
         //ByteOrder be = ByteOrder.LITTLE_ENDIAN;//don't think I need it?
         int numberOfBytesPerValue = 4;
   
     public:
+        std::vector<double> downstream;
+        std::vector<double> upstream;
+        bool oneShotMode = false;
+        bool oneShotDone = false;
         int idOfCommand = 0;
         bool done = false;
         bool started = false;
         int packetSize = 64;
         int numValues = packetSize / 4 - 1;
+
+    public:
 
     FloatPacketType(int id, int size);
     
@@ -45,5 +49,20 @@ class FloatPacketType{
     static int getId(std::vector<unsigned char>);
 
     bool sendOk(); 
+
+    union int_to_float_bits {
+        int32_t integer_bits;
+        float converted_float_bits;
+    };
+
+    /**
+     * intBitsToFloat conversion from java
+    */
+    static float intBitsToFloat(int32_t int_value);
+
+    /**
+     * floatToIntBits
+    */
+    static unsigned float_to_bits(float x);
 
 };

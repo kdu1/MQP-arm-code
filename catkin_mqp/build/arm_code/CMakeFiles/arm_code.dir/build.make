@@ -70,18 +70,18 @@ arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/Robot.cpp.s"
 	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp -o CMakeFiles/arm_code.dir/src/Robot.cpp.s
 
-arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
-arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/AbstractSimpleComsDevice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o"
-	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o -c /home/vboxuser/catkin_mqp/src/arm_code/src/AbstractSimpleComsDevice.cpp
+arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
+arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o -c /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp
 
-arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.i"
-	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/catkin_mqp/src/arm_code/src/AbstractSimpleComsDevice.cpp > CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.i
+arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.i"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp > CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.i
 
-arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.s"
-	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/AbstractSimpleComsDevice.cpp -o CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.s
+arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.s"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp -o CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.s
 
 arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
 arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/FloatPacketType.cpp
@@ -99,14 +99,14 @@ arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.s: cmake_force
 # Object files for target arm_code
 arm_code_OBJECTS = \
 "CMakeFiles/arm_code.dir/src/Robot.cpp.o" \
-"CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o" \
+"CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o" \
 "CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o"
 
 # External object files for target arm_code
 arm_code_EXTERNAL_OBJECTS =
 
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o
-/home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/AbstractSimpleComsDevice.cpp.o
+/home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/build.make
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: /opt/ros/noetic/lib/libroscpp.so

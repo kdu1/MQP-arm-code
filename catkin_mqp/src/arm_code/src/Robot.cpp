@@ -4,8 +4,8 @@
 #include <vector>
 #include <thread>
 #include <math.h>
-#include "std_msgs/Int32.h"
-#include <hidapi/hidapi.h>
+#include <std_msgs/Int32.h>
+//#include <hidapi/hidapi.h>
 //#include <libusb.h>
 //#include <hidapi_libusb.h>
 //#include "hidapi.h"
@@ -96,7 +96,7 @@ class Robot{
         _servo_jp_publisher = nh->advertise<sensor_msgs::JointState>("servo_jp", 10);
     };
 
-    void disconnect(){
+    void scddisconnect(){
         SimpleComsDevice::disconnect();
     }
 
@@ -295,7 +295,7 @@ class Robot{
     void write(int id, std::vector<Complex> values){
         
         try{
-            SimpleComsDevice::writeFloats(id, values);//Then convert it to floats cause the complex is just floats with twice as big array
+             SimpleComsDevice::writeFloats(id, values);//Then convert it to floats cause the complex is just floats with twice as big array
             
         }
         catch (const std::exception& e) {
@@ -334,6 +334,7 @@ class Robot{
      * @param reportID he report ID (or (byte) 0x00)
      * @return The number of bytes written, or -1 if an error occurs
     */
+    //TODO: pretty sure this should be CArray
     std::vector<double> read(unsigned char reportID){
 
         //matlab has
@@ -346,7 +347,7 @@ class Robot{
             throw ("unable to open device");
         }*/
         
-        return SimpleComsDevice::readFloats(reportID);
+        return  SimpleComsDevice::readFloats(reportID);
         //data is buf
         /*const int length = 256;
         unsigned char buf[length + 1];
@@ -612,7 +613,7 @@ class Robot{
 
     //need to exit
     void stop(){
-        SimpleComsDevice::disconnectDeviceImp();
+         SimpleComsDevice::disconnectDeviceImp();
     }
 
 };
@@ -681,7 +682,7 @@ int main(int argc, char **argv)
 
     ros::spinOnce();
     
-    robot.disconnect();
+    robot.scddisconnect();
     //ros::waitForShutdown();
 
     //one thing I don't really understand is how write works while we're doing both write and sending information through ros
