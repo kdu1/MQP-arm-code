@@ -225,7 +225,7 @@ void SimpleComsDevice::writeFloats(int id, std::vector<Complex> values, bool pol
                 if (&e != nullptr) {
                     try {
                         //e(*this);//TODO: uh oh
-                        e();
+                        e(*this);
                     } catch (const std::exception& e) {
                         std::cout << e.what() << std::endl;
                     }
@@ -290,7 +290,7 @@ void SimpleComsDevice::writeFloats(int id, std::vector<Complex> values, bool pol
                 connected = false;
             }
         }
-        disconnectDeviceImp();
+        this->disconnectDeviceImp();
         std::cout << "SimplePacketComs disconnect" << std::endl;
     }).detach();
     //SimpleComsDevice::Runnable* t1 = new SimpleComsDevice::Runnable();

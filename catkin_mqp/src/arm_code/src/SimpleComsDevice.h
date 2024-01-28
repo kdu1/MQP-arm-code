@@ -10,10 +10,11 @@
 #include <cassert>
 //#include <windows.h>
 //#include <process.h>
-#include <hidapi.h>
+//#include <hidapi.h>
 #include <hidapi/hidapi.h>
 #include <libusb.h>
-#include <hidapi_libusb.h>
+#include "libusb-1.0/libusb.h"
+//#include <hidapi/hidapi_libusb.h>
 //#include "hidapi.h"
 
 #include <memory>
@@ -43,13 +44,6 @@
 
 //
 // Sample using platform-specific headers
-#if defined(__APPLE__) && HID_API_VERSION >= HID_API_MAKE_VERSION(0, 12, 0)
-#include <hidapi_darwin.h>
-#endif
-
-#if defined(_WIN32) && HID_API_VERSION >= HID_API_MAKE_VERSION(0, 12, 0)
-#include <hidapi_winapi.h>
-#endif
 
 #if defined(USING_HIDAPI_LIBUSB) && HID_API_VERSION >= HID_API_MAKE_VERSION(0, 12, 0)
 #include <hidapi_libusb.h>
@@ -63,25 +57,26 @@ struct hid_device_;
 typedef std::complex<float> Complex;
 typedef std::valarray<Complex> CArray;
     
-//static bool virtualv;
+// bool virtualv;
 
 //String name = "SimpleComsDevice";
 
-//static int readTimeout = 100;
+// int readTimeout = 100;
 
-//static bool isTimedOut = false;
+// bool isTimedOut = false;
 
 //definitions
-//static bool connected;
+// bool connected;
 
 //HIDPacketComs extends this, which calls read + write, which calls hidDevice.read+write, 
 //which calls HidApi.read + write
 //which calls hid_api.read + write
 class SimpleComsDevice {
     
-
+    private:
+        std::vector<FloatPacketType> pollingQueue;
     public:
-    static std::vector<FloatPacketType> pollingQueue;
+    
     // A Functor
     struct Runnable
     {
@@ -90,14 +85,14 @@ class SimpleComsDevice {
         // This operator overloading enables calling
         // operator function () on objects of increment
         //how do I get the a
-        int operator () () const {
-            while (SimpleComsDevice::getConnected()) {
+        int operator () (SimpleComsDevice s) const {
+            while (s.getConnected()) {
                 try {
-                    std::vector<FloatPacketType> pollingQueue = SimpleComsDevice::getPollingQueue();
+                    std::vector<FloatPacketType> pollingQueue = s.getPollingQueue();
                     for (int i = 0; i < pollingQueue.size(); i++) {
                         FloatPacketType pollingPacket = pollingQueue[i];
                         if (pollingPacket.sendOk()){
-                            SimpleComsDevice::process(pollingPacket); //whys this the part I"m struggling with
+                            s.process(pollingPacket); //whys this the part I"m struggling with
                         }
                     } 
                 } catch (const std::exception& e) {
@@ -109,11 +104,11 @@ class SimpleComsDevice {
                 } catch (const std::exception& e1) {
                     printf("connect thread sleep exception: ");
                     printf(e1.what());
-                    SimpleComsDevice::setConnected(false);
+                    s.setConnected(false);
                 } 
             } 
             
-            SimpleComsDevice::disconnectDeviceImp();
+            s.disconnectDeviceImp();
             printf("SimplePacketComs disconnect");
             return 0;
         };
@@ -130,13 +125,13 @@ class SimpleComsDevice {
     unsigned short pid = 0x0486;
     hid_device * handle = hid_open(vid, pid, NULL); //from hid.c*/
 
-    static bool validHandle(hid_device * handle);
+     bool validHandle(hid_device * handle);
     //std::unordered_map<int, std::vector<Runnable>> events;
     
     
     
     
-    static void addPollingPacket(FloatPacketType packet) {
+     void addPollingPacket(FloatPacketType packet) {
         if (!(getPacket((int)packet.idOfCommand) == nullptr)){
             throw("Only one packet of a given ID is allowed to poll. Add an event to recive data"); 
         }
@@ -144,10 +139,10 @@ class SimpleComsDevice {
     }
 
     /**
-     * getSimpleComsDevice::pollingQueue
-     * @return SimpleComsDevice::pollingQueue
+     * get pollingQueue
+     * @return pollingQueue
     */
-    static std::vector<FloatPacketType> getPollingQueue(){
+     std::vector<FloatPacketType> getPollingQueue(){
         return pollingQueue;
     }
 
@@ -155,8 +150,8 @@ class SimpleComsDevice {
      * setPollingQueue
      * @param pollingQueue
     */
-    static void setPollingQueue(std::vector<FloatPacketType> pollingQueue){
-        pollingQueue = pollingQueue;
+     void setPollingQueue(std::vector<FloatPacketType> pollingQueuein){
+        pollingQueue = pollingQueuein;
     }
 
     
@@ -164,7 +159,7 @@ class SimpleComsDevice {
      * given id
      * return FloatPacketType pointer corresponding to it
     */
-    static FloatPacketType* getPacket(int ID) ;
+     FloatPacketType* getPacket(int ID) ;
     
     /*
     public void removeEvent(int id, Runnable event) {
@@ -196,12 +191,12 @@ class SimpleComsDevice {
     //void writeFloats(int id, std::vector<Complex> values);
     
     
-    static void writeFloats(int id, std::vector<Complex> values) ;
+     void writeFloats(int id, std::vector<Complex> values) ;
     
-    static void writeFloats(int id, std::vector<Complex> values, bool polling) ;
+     void writeFloats(int id, std::vector<Complex> values, bool polling) ;
     
     
-    static std::vector<double> readFloats(int id) ;
+     std::vector<double> readFloats(int id) ;
     
     //void readFloats(int id, std::vector<double> values) ;
     
@@ -209,26 +204,26 @@ class SimpleComsDevice {
     /**
      * TODO: not sure if this is correct for getting the id from the bytebuffer thing
     */
-    static int getId(std::vector<unsigned char> bytes);
+     int getId(std::vector<unsigned char> bytes);
     
     /**
      * actually calls write
     */
-    static void process(FloatPacketType packet);
+     void process(FloatPacketType packet);
     
-    static int getReadTimeout();
+     int getReadTimeout();
     /**
      * calls process which calls write
     */
-    static bool connect();
+     bool connect();
     
-    static void disconnect();
+     void disconnect();
     
-    static bool isVirtual();
+     bool isVirtual();
     
-    static void setVirtual(bool virtualv);
+     void setVirtual(bool virtualv);
     
-    static void setReadTimeout(int readTimeout);
+     void setReadTimeout(int readTimeout);
     
     /*String getName() {
         return this->name;
@@ -238,36 +233,36 @@ class SimpleComsDevice {
         this.name = name;
     }*/
     
-    static bool getIsTimedOut();
+     bool getIsTimedOut();
     
     //int read(byte[] paramArrayOfbyte, int paramInt);
     
     //int write(byte[] paramArrayOfbyte, int paramInt1, int paramInt2);
     
-    static bool disconnectDeviceImp();
+     bool disconnectDeviceImp();
     
-    static bool connectDeviceImp();
+     bool connectDeviceImp();
 
     /**
      * setConnected
      * @param connected value 
     */
-    static void setConnected(bool set);
+     void setConnected(bool set);
     /**
      * getConnected
      * @return connected value 
     */
-    static bool getConnected();
+     bool getConnected();
 
     /**
      * write using hidapi
     */
-    static int write(std::vector<unsigned char> packet, int len, unsigned char reportID);
+     int write(std::vector<unsigned char> packet, int len, unsigned char reportID);
     /**
      * TODO: not sure how to get resulting packets returned
      * read using hidapi
      * reads position data from each motor
     */
-    static int read(std::vector<unsigned char> bytes, int milliseconds);
+     int read(std::vector<unsigned char> bytes, int milliseconds);
 
 };

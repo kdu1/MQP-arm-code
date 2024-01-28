@@ -81,23 +81,25 @@ class Robot{
         //SimpleComsDevice a;
         ros::Subscriber pos_subscriber_; //gonna be honest not really sure what to subscribe to
         ros::Publisher _servo_jp_publisher;
+        SimpleComsDevice* s;
 
     /**
      * Robot constructor
      * @param nh - NodeHandle for ros
      * Calls connect method from SimpleComsDevice
     */
-    Robot(ros::NodeHandle *nh){
+    Robot(ros::NodeHandle *nh, SimpleComsDevice *s){
         //SimpleComsDevice a;
         //this->a = a;
-        SimpleComsDevice::connect();
+        this->s = s;
+        s->connect();
         pos_subscriber_ = nh->subscribe(
             "pos_command", 10, &Robot::callbackPosCommand, this);
         _servo_jp_publisher = nh->advertise<sensor_msgs::JointState>("servo_jp", 10);
     };
 
     void scddisconnect(){
-        SimpleComsDevice::disconnect();
+        s->disconnect();
     }
 
     /**
@@ -295,7 +297,7 @@ class Robot{
     void write(int id, std::vector<Complex> values){
         
         try{
-             SimpleComsDevice::writeFloats(id, values);//Then convert it to floats cause the complex is just floats with twice as big array
+             s->writeFloats(id, values);//Then convert it to floats cause the complex is just floats with twice as big array
             
         }
         catch (const std::exception& e) {
@@ -347,7 +349,7 @@ class Robot{
             throw ("unable to open device");
         }*/
         
-        return  SimpleComsDevice::readFloats(reportID);
+        return  s->readFloats(reportID);
         //data is buf
         /*const int length = 256;
         unsigned char buf[length + 1];
@@ -613,7 +615,7 @@ class Robot{
 
     //need to exit
     void stop(){
-         SimpleComsDevice::disconnectDeviceImp();
+         s->disconnectDeviceImp();
     }
 
 };
@@ -666,9 +668,9 @@ int main(int argc, char **argv)
     //no idea if it works like this
     std::vector<std::vector<int>> cRed(3, std::vector<int>(3, 0));
     std::vector<int> desPos = cRed[0];
-    //SimpleComsDevice a;
+    SimpleComsDevice s;
     //init robot
-    Robot robot(&nh);
+    Robot robot(&nh, &s);
     ROS_INFO("ROS robot is now started");
 
     //move arm

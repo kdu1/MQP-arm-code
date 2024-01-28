@@ -5,8 +5,6 @@ arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o: /home/vboxuser/catki
 arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/FloatPacketType.cpp
 
 arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/FloatPacketType.h
-arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/hidapi.h
-arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/hidapi_libusb.h
 arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/libusb.h
 arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp
 arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h
@@ -75,8 +73,6 @@ arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /opt/ros/noetic/include/xmlrpc
 arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 
 arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/FloatPacketType.h
-arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/hidapi.h
-arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/hidapi_libusb.h
 arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/include/libusb.h
 arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp
 arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h
