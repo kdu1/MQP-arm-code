@@ -5,7 +5,15 @@ All the important code so far is in the catkin_mqp folder in the src/arm_code/sr
 The main file is Robot.cpp, with functions for writing to the hid device using hidapi in SimpleComsDevice.cpp
 
 ## On hidapi:
-Must add "hidapi/hidapi" to target_link_libraries statement in CMakeLists.txt 
+Must add "hidapi-libusb" to target_link_libraries statement in CMakeLists.txt:
+`
+target_link_libraries(${PROJECT_NAME}
+  hidapi-libusb
+   ${catkin_LIBRARIES}
+)
+
+target_link_libraries(${PROJECT_NAME})
+`
 
 ### install:
 - sudo apt-get install libusb-dev
