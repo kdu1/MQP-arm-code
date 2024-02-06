@@ -1,0 +1,8 @@
+prefix=/home/vboxuser/catkin_mqp/install
+
+Name: arm_sim
+Description: Description of arm_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

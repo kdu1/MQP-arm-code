@@ -96,11 +96,53 @@ arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.s"
 	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/FloatPacketType.cpp -o CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.s
 
+arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
+arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o -c /home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp
+
+arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arm_code.dir/src/cubic_traj.cpp.i"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp > CMakeFiles/arm_code.dir/src/cubic_traj.cpp.i
+
+arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/cubic_traj.cpp.s"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp -o CMakeFiles/arm_code.dir/src/cubic_traj.cpp.s
+
+arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
+arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/rt_nonfinite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o -c /home/vboxuser/catkin_mqp/src/arm_code/src/rt_nonfinite.cpp
+
+arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.i"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/catkin_mqp/src/arm_code/src/rt_nonfinite.cpp > CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.i
+
+arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.s"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/rt_nonfinite.cpp -o CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.s
+
+arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.o: arm_code/CMakeFiles/arm_code.dir/flags.make
+arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.o: /home/vboxuser/catkin_mqp/src/arm_code/src/ik3001.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.o"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arm_code.dir/src/ik3001.cpp.o -c /home/vboxuser/catkin_mqp/src/arm_code/src/ik3001.cpp
+
+arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arm_code.dir/src/ik3001.cpp.i"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/catkin_mqp/src/arm_code/src/ik3001.cpp > CMakeFiles/arm_code.dir/src/ik3001.cpp.i
+
+arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arm_code.dir/src/ik3001.cpp.s"
+	cd /home/vboxuser/catkin_mqp/build/arm_code && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/catkin_mqp/src/arm_code/src/ik3001.cpp -o CMakeFiles/arm_code.dir/src/ik3001.cpp.s
+
 # Object files for target arm_code
 arm_code_OBJECTS = \
 "CMakeFiles/arm_code.dir/src/Robot.cpp.o" \
 "CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o" \
-"CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o"
+"CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o" \
+"CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o" \
+"CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o" \
+"CMakeFiles/arm_code.dir/src/ik3001.cpp.o"
 
 # External object files for target arm_code
 arm_code_EXTERNAL_OBJECTS =
@@ -108,6 +150,9 @@ arm_code_EXTERNAL_OBJECTS =
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/Robot.cpp.o
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o
+/home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o
+/home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o
+/home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/src/ik3001.cpp.o
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/build.make
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: /opt/ros/noetic/lib/libroscpp.so
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: /usr/lib/x86_64-linux-gnu/libpthread.so
@@ -127,7 +172,7 @@ arm_code_EXTERNAL_OBJECTS =
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code: arm_code/CMakeFiles/arm_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/catkin_mqp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code"
 	cd /home/vboxuser/catkin_mqp/build/arm_code && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arm_code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

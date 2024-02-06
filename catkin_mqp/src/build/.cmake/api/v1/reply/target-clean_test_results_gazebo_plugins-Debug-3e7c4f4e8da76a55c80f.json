@@ -1,0 +1,96 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"catkin_run_tests_target",
+			"add_rostest",
+			"_add_rostest_google_test",
+			"add_rostest_gtest"
+		],
+		"files" : 
+		[
+			"/opt/ros/noetic/share/catkin/cmake/test/tests.cmake",
+			"/opt/ros/noetic/share/rostest/cmake/rostest-extras.cmake",
+			"gazebo_ros_pkgs/gazebo_plugins/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 433,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 80,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 185,
+				"parent" : 4
+			}
+		]
+	},
+	"id" : "clean_test_results_gazebo_plugins::@708503929a8880cf05ac",
+	"name" : "clean_test_results_gazebo_plugins",
+	"paths" : 
+	{
+		"build" : "gazebo_ros_pkgs/gazebo_plugins",
+		"source" : "gazebo_ros_pkgs/gazebo_plugins"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/clean_test_results_gazebo_plugins",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/clean_test_results_gazebo_plugins.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

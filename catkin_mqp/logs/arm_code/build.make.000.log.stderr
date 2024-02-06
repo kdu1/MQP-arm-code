@@ -1,0 +1,755 @@
+In file included from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:5[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:[m[K In member function ‘[01m[Kint SimpleComsDevice::Runnable::operator()(SimpleComsDevice) const[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:100:36:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  100 |                     printf(e.what()[01;35m[K)[m[K;
+      |                                    [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:106:37:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  106 |                     printf(e1.what()[01;35m[K)[m[K;
+      |                                     [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[KFloatPacketType* SimpleComsDevice::getPacket(int)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:82:20:[m[K [01;35m[Kwarning: [m[Kaddress of local variable ‘[01m[Kq[m[K’ returned [[01;35m[K-Wreturn-local-addr[m[K]
+   82 |             return [01;35m[K&q[m[K;
+      |                    [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:80:26:[m[K [01;36m[Knote: [m[Kdeclared here
+   80 |     for (FloatPacketType [01;36m[Kq[m[K : SimpleComsDevice::getPollingQueue()) {
+      |                          [01;36m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kvoid SimpleComsDevice::writeFloats(int, std::vector<std::complex<float> >, bool)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:107:24:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  107 |         printf(e.what()[01;35m[K)[m[K;
+      |                        [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kstd::vector<double> SimpleComsDevice::readFloats(int)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:141:28:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  141 |             printf(e.what()[01;35m[K)[m[K;
+      |                            [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kvoid SimpleComsDevice::process(FloatPacketType)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:187:40:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+  187 |                                 printf([01;35m[K"Timeout resolved {}"[m[K, ID);
+      |                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:212:32:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  212 |                 printf(e.what()[01;35m[K)[m[K;
+      |                                [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:253:20:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  253 |     printf(e.what()[01;35m[K)[m[K;
+      |                    [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kbool SimpleComsDevice::disconnectDeviceImp()[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:369:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  369 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:35:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+   35 | # define M_PI           std::complex<float>(3.14159265358979323846, 0)  /* pi */
+      | 
+In file included from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:18[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:26:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   26 | # define M_PI           3.14159265358979323846  /* pi */
+      | 
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kbool SimpleComsDevice::validHandle(hid_device*)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+   62 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:[m[K In member function ‘[01m[Kint SimpleComsDevice::write(std::vector<unsigned char>, int, unsigned char)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.cpp:504:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  504 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:[m[K In member function ‘[01m[Kint SimpleComsDevice::Runnable::operator()(SimpleComsDevice) const[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:100:36:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  100 |                     printf(e.what()[01;35m[K)[m[K;
+      |                                    [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/SimpleComsDevice.h:106:37:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  106 |                     printf(e1.what()[01;35m[K)[m[K;
+      |                                     [01;35m[K^[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[Kvoid Robot::callbackPosCommand(const JointState&)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:117:20:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+  117 |             printf([01;35m[K"{}"[m[K, pos[i]);
+      |                    [01;35m[K^~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<std::complex<float> > > Robot::run_trajectory(bool, CArray, double)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:154:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::valarray<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  154 |                 ROS_INFO([01;35m[K"jd size: %d"[m[K, [32m[Kjd.size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                                [32m[K|[m[K
+      |                                                [32m[Kstd::vector<std::valarray<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:154:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  154 |                 [01;36m[KROS_INFO[m[K("jd size: %d", jd.size());
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:154:37:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  154 |                 ROS_INFO("jd size: [01;36m[K%d[m[K", jd.size());
+      |                                    [01;36m[K~^[m[K
+      |                                     [01;36m[K|[m[K
+      |                                     [01;36m[Kint[m[K
+      |                                    [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:155:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  155 |                 ROS_INFO([01;35m[K"jd[0] size: %d"[m[K, [32m[Kjd[0].size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~[m[K
+      |                                                      [32m[K|[m[K
+      |                                                      [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:155:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  155 |                 [01;36m[KROS_INFO[m[K("jd[0] size: %d", jd[0].size());
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:155:40:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  155 |                 ROS_INFO("jd[0] size: [01;36m[K%d[m[K", jd[0].size());
+      |                                       [01;36m[K~^[m[K
+      |                                        [01;36m[K|[m[K
+      |                                        [01;36m[Kint[m[K
+      |                                       [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:175:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::complex<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  175 |                 ROS_ERROR([01;35m[K"D size: %d"[m[K, [32m[KD[0].size()[m[K);
+      |                           [01;35m[K^~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kstd::vector<std::complex<float> >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:175:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  175 |                 [01;36m[KROS_ERROR[m[K("D size: %d", D[0].size());
+      |                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:175:37:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  175 |                 ROS_ERROR("D size: [01;36m[K%d[m[K", D[0].size());
+      |                                    [01;36m[K~^[m[K
+      |                                     [01;36m[K|[m[K
+      |                                     [01;36m[Kint[m[K
+      |                                    [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::valarray<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  209 |                     ROS_ERROR([01;35m[K"detCheckGet size: %d, %d"[m[K, [32m[KdetCheckGet.size()[m[K, detCheckGet[0].size());
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                           [32m[K|[m[K
+      |                                                                           [32m[Kstd::vector<std::valarray<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  209 |                     [01;36m[KROS_ERROR[m[K("detCheckGet size: %d, %d", detCheckGet.size(), detCheckGet[0].size());
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:51:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  209 |                     ROS_ERROR("detCheckGet size: [01;36m[K%d[m[K, %d", detCheckGet.size(), detCheckGet[0].size());
+      |                                                  [01;36m[K~^[m[K
+      |                                                   [01;36m[K|[m[K
+      |                                                   [01;36m[Kint[m[K
+      |                                                  [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 9 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  209 |                     ROS_ERROR([01;35m[K"detCheckGet size: %d, %d"[m[K, detCheckGet.size(), [32m[KdetCheckGet[0].size()[m[K);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                      [32m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                  [32m[K|[m[K
+      |                                                                                                  [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  209 |                     [01;36m[KROS_ERROR[m[K("detCheckGet size: %d, %d", detCheckGet.size(), detCheckGet[0].size());
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:209:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  209 |                     ROS_ERROR("detCheckGet size: %d, [01;36m[K%d[m[K", detCheckGet.size(), detCheckGet[0].size());
+      |                                                      [01;36m[K~^[m[K
+      |                                                       [01;36m[K|[m[K
+      |                                                       [01;36m[Kint[m[K
+      |                                                      [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:221:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  221 |                     ROS_INFO([01;35m[K"jacobv size: %d"[m[K, [32m[Kjacobv.size()[m[K);
+      |                              [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+      |                                                            [32m[K|[m[K
+      |                                                            [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:221:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  221 |                     [01;36m[KROS_INFO[m[K("jacobv size: %d", jacobv.size());
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:221:45:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  221 |                     ROS_INFO("jacobv size: [01;36m[K%d[m[K", jacobv.size());
+      |                                            [01;36m[K~^[m[K
+      |                                             [01;36m[K|[m[K
+      |                                             [01;36m[Kint[m[K
+      |                                            [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:222:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  222 |                     ROS_ERROR([01;35m[K"jacobv size: %d"[m[K, [32m[Kjacobv.size()[m[K);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+      |                                                             [32m[K|[m[K
+      |                                                             [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:222:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  222 |                     [01;36m[KROS_ERROR[m[K("jacobv size: %d", jacobv.size());
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:222:46:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  222 |                     ROS_ERROR("jacobv size: [01;36m[K%d[m[K", jacobv.size());
+      |                                             [01;36m[K~^[m[K
+      |                                              [01;36m[K|[m[K
+      |                                              [01;36m[Kint[m[K
+      |                                             [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:252:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  252 |                             ROS_ERROR([01;35m[K"tc size: %d"[m[K, [32m[Ktc.size()[m[K);
+      |                                       [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                                             [32m[K|[m[K
+      |                                                             [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:252:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  252 |                             [01;36m[KROS_ERROR[m[K("tc size: %d", tc.size());
+      |                             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:252:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  252 |                             ROS_ERROR("tc size: [01;36m[K%d[m[K", tc.size());
+      |                                                 [01;36m[K~^[m[K
+      |                                                  [01;36m[K|[m[K
+      |                                                  [01;36m[Kint[m[K
+      |                                                 [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:346:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  346 |                 ROS_INFO([01;35m[K"%f"[m[K, [32m[KD.size()[m[K);
+      |                          [01;35m[K^~~~[m[K  [32m[K~~~~~~~~[m[K
+      |                                      [32m[K|[m[K
+      |                                      [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:346:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  346 |                 [01;36m[KROS_INFO[m[K("%f", D.size());
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:346:28:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  346 |                 ROS_INFO("[01;36m[K%f[m[K", D.size());
+      |                           [01;36m[K~^[m[K
+      |                            [01;36m[K|[m[K
+      |                            [01;36m[Kdouble[m[K
+      |                           [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  358 |             ROS_INFO([01;35m[K"D row: %d col: %d"[m[K, [32m[KD.size()[m[K, D[0].size());
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~[m[K
+      |                                                 [32m[K|[m[K
+      |                                                 [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  358 |             [01;36m[KROS_INFO[m[K("D row: %d col: %d", D.size(), D[0].size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:31:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  358 |             ROS_INFO("D row: [01;36m[K%d[m[K col: %d", D.size(), D[0].size());
+      |                              [01;36m[K~^[m[K
+      |                               [01;36m[K|[m[K
+      |                               [01;36m[Kint[m[K
+      |                              [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 9 has type ‘[01m[Kstd::vector<std::complex<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  358 |             ROS_INFO([01;35m[K"D row: %d col: %d"[m[K, D.size(), [32m[KD[0].size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K            [32m[K~~~~~~~~~~~[m[K
+      |                                                              [32m[K|[m[K
+      |                                                              [32m[Kstd::vector<std::complex<float> >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  358 |             [01;36m[KROS_INFO[m[K("D row: %d col: %d", D.size(), D[0].size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:358:39:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  358 |             ROS_INFO("D row: %d col: [01;36m[K%d[m[K", D.size(), D[0].size());
+      |                                      [01;36m[K~^[m[K
+      |                                       [01;36m[K|[m[K
+      |                                       [01;36m[Kint[m[K
+      |                                      [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:363:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  363 |             [01;36m[KROS_ERROR[m[K(e.what());
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<std::complex<float> > > Robot::jacob3001(CArray)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:565:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  565 |             ROS_INFO([01;35m[K"ja size: %d"[m[K, [32m[Kja.size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                            [32m[K|[m[K
+      |                                            [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:565:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  565 |             [01;36m[KROS_INFO[m[K("ja size: %d", ja.size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:565:33:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  565 |             ROS_INFO("ja size: [01;36m[K%d[m[K", ja.size());
+      |                                [01;36m[K~^[m[K
+      |                                 [01;36m[K|[m[K
+      |                                 [01;36m[Kint[m[K
+      |                                [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:591:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  591 |             ROS_INFO([01;35m[K"jd size: %d"[m[K, [32m[KJ.size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~[m[K
+      |                                           [32m[K|[m[K
+      |                                           [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  591 |             [01;36m[KROS_INFO[m[K("jd size: %d", J.size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:591:33:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  591 |             ROS_INFO("jd size: [01;36m[K%d[m[K", J.size());
+      |                                [01;36m[K~^[m[K
+      |                                 [01;36m[K|[m[K
+      |                                 [01;36m[Kint[m[K
+      |                                [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:592:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::complex<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  592 |             ROS_INFO([01;35m[K"jd[0] size: %d"[m[K, [32m[KJ[0].size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~[m[K
+      |                                                 [32m[K|[m[K
+      |                                                 [32m[Kstd::vector<std::complex<float> >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:592:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  592 |             [01;36m[KROS_INFO[m[K("jd[0] size: %d", J[0].size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:592:36:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  592 |             ROS_INFO("jd[0] size: [01;36m[K%d[m[K", J[0].size());
+      |                                   [01;36m[K~^[m[K
+      |                                    [01;36m[K|[m[K
+      |                                    [01;36m[Kint[m[K
+      |                                   [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[Kstd::vector<std::valarray<std::complex<float> > > Robot::measured_js(bool, bool)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:730:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::valarray<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  730 |             ROS_INFO([01;35m[K"ret size: %d"[m[K, [32m[Kret.size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+      |                                              [32m[K|[m[K
+      |                                              [32m[Kstd::vector<std::valarray<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:730:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  730 |             [01;36m[KROS_INFO[m[K("ret size: %d", ret.size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:730:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  730 |             ROS_INFO("ret size: [01;36m[K%d[m[K", ret.size());
+      |                                 [01;36m[K~^[m[K
+      |                                  [01;36m[K|[m[K
+      |                                  [01;36m[Kint[m[K
+      |                                 [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:731:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  731 |             ROS_INFO([01;35m[K"retPos size: %d"[m[K, [32m[Kret[0].size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:731:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  731 |             [01;36m[KROS_INFO[m[K("retPos size: %d", ret[0].size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:731:37:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  731 |             ROS_INFO("retPos size: [01;36m[K%d[m[K", ret[0].size());
+      |                                    [01;36m[K~^[m[K
+      |                                     [01;36m[K|[m[K
+      |                                     [01;36m[Kint[m[K
+      |                                    [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:732:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  732 |             ROS_INFO([01;35m[K"retVel size: %d"[m[K, [32m[Kret[1].size()[m[K);
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:732:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  732 |             [01;36m[KROS_INFO[m[K("retVel size: %d", ret[1].size());
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:732:37:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  732 |             ROS_INFO("retVel size: [01;36m[K%d[m[K", ret[1].size());
+      |                                    [01;36m[K~^[m[K
+      |                                     [01;36m[K|[m[K
+      |                                     [01;36m[Kint[m[K
+      |                                    [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:2[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[KComplex Robot::det(std::vector<std::vector<std::complex<float> > >, int)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:788:23:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<std::vector<std::complex<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  788 |             ROS_ERROR([01;35m[K"det matrix size: %d, correct size: %d"[m[K, [32m[Kmatrix.size()[m[K, size);
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+      |                                                                           [32m[K|[m[K
+      |                                                                           [32m[Kstd::vector<std::vector<std::complex<float> > >::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:788:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  788 |             [01;36m[KROS_ERROR[m[K("det matrix size: %d, correct size: %d", matrix.size(), size);
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:788:42:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  788 |             ROS_ERROR("det matrix size: [01;36m[K%d[m[K, correct size: %d", matrix.size(), size);
+      |                                         [01;36m[K~^[m[K
+      |                                          [01;36m[K|[m[K
+      |                                          [01;36m[Kint[m[K
+      |                                         [32m[K%ld[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:[m[K In member function ‘[01m[Kvoid Robot::pickAndPlace(double, double, double, int)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:81:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  858 |         CArray aset = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {100,0,195}, {[01;35m[Kxi[m[K,yi,(zi+30)}).apply(std::conj);
+      |                                                                                 [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:81:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:84:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  858 |         CArray aset = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {100,0,195}, {xi,[01;35m[Kyi[m[K,(zi+30)}).apply(std::conj);
+      |                                                                                    [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:84:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:90:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(zi + (double)30)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  858 |         CArray aset = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {100,0,195}, {xi,yi,[01;35m[K(zi+30)[m[K}).apply(std::conj);
+      |                                                                                       [01;35m[K~~~^~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:858:90:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(zi + (double)30)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {[01;35m[Kxi[m[K,yi,zi+30}, {xi+7,yi,zi}).apply(std::conj);
+      |                                                                     [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:72:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {xi,[01;35m[Kyi[m[K,zi+30}, {xi+7,yi,zi}).apply(std::conj);
+      |                                                                        [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:72:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(zi + (double)30)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {xi,yi,[01;35m[Kzi+30[m[K}, {xi+7,yi,zi}).apply(std::conj);
+      |                                                                           [01;35m[K~~^~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(zi + (double)30)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:86:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(xi + (double)7)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {xi,yi,zi+30}, {[01;35m[Kxi+7[m[K,yi,zi}).apply(std::conj);
+      |                                                                                    [01;35m[K~~^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:86:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(xi + (double)7)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:89:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {xi,yi,zi+30}, {xi+7,[01;35m[Kyi[m[K,zi}).apply(std::conj);
+      |                                                                                         [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:89:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:92:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kzi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  863 |         CArray aset2 = cubic_traj(traj_time, {0, 0, 0}, {0, 0, 0}, {xi,yi,zi+30}, {xi+7,yi,[01;35m[Kzi[m[K}).apply(std::conj);
+      |                                                                                            [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:863:92:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kzi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:63:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  868 |         CArray aset3 = cubic_traj(tj2, {0, 0, 0}, {0, 0, 0}, {[01;35m[Kxi[m[K,yi,zi}, {100,0,195}).apply(std::conj);
+      |                                                               [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:63:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kxi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:66:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  868 |         CArray aset3 = cubic_traj(tj2, {0, 0, 0}, {0, 0, 0}, {xi,[01;35m[Kyi[m[K,zi}, {100,0,195}).apply(std::conj);
+      |                                                                  [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:66:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kyi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kzi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  868 |         CArray aset3 = cubic_traj(tj2, {0, 0, 0}, {0, 0, 0}, {xi,yi,[01;35m[Kzi[m[K}, {100,0,195}).apply(std::conj);
+      |                                                                     [01;35m[K^~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/Robot.cpp:868:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kzi[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K-Wnarrowing[m[K]
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.h:22[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:12[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:[m[K In function ‘[01m[KCArray cubic_traj(float, std::vector<float>, std::vector<float>, std::vector<float>, std::vector<float>)[m[K’:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:128:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  128 |   ROS_INFO([01;35m[K"size of pi:%d"[m[K, [32m[Kpi.size()[m[K);
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                    [32m[K|[m[K
+      |                                    [32m[Kstd::vector<float>::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:128:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  128 |   [01;36m[KROS_INFO[m[K("size of pi:%d", pi.size());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:128:25:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  128 |   ROS_INFO("size of pi:[01;36m[K%d[m[K", pi.size());
+      |                        [01;36m[K~^[m[K
+      |                         [01;36m[K|[m[K
+      |                         [01;36m[Kint[m[K
+      |                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.h:22[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:12[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:263:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  263 |   ROS_INFO([01;35m[K"CT SIZE: %d"[m[K, [32m[KCT.size()[m[K);
+      |            [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                  [32m[K|[m[K
+      |                                  [32m[Kstd::vector<float>::size_type {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:263:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  263 |   [01;36m[KROS_INFO[m[K("CT SIZE: %d", CT.size());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:263:23:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  263 |   ROS_INFO("CT SIZE: [01;36m[K%d[m[K", CT.size());
+      |                      [01;36m[K~^[m[K
+      |                       [01;36m[K|[m[K
+      |                       [01;36m[Kint[m[K
+      |                      [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.h:22[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:12[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:264:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  264 |   ROS_INFO([01;35m[K"CTcomplex size: %d"[m[K, [32m[KCTcomplex.size()[m[K);
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[K|[m[K
+      |                                                [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:264:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  264 |   [01;36m[KROS_INFO[m[K("CTcomplex size: %d", CTcomplex.size());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:264:30:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  264 |   ROS_INFO("CTcomplex size: [01;36m[K%d[m[K", CTcomplex.size());
+      |                             [01;36m[K~^[m[K
+      |                              [01;36m[K|[m[K
+      |                              [01;36m[Kint[m[K
+      |                             [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.h:22[m[K,
+                 from [01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:12[m[K:
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:283:16:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  283 |       ROS_INFO([01;35m[K"CTcomplex size: %d"[m[K, [32m[KCTcomplex.size()[m[K);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[Kstd::size_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:283:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  283 |       [01;36m[KROS_INFO[m[K("CTcomplex size: %d", CTcomplex.size());
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/vboxuser/catkin_mqp/src/arm_code/src/cubic_traj.cpp:283:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  283 |       ROS_INFO("CTcomplex size: [01;36m[K%d[m[K", CTcomplex.size());
+      |                                 [01;36m[K~^[m[K
+      |                                  [01;36m[K|[m[K
+      |                                  [01;36m[Kint[m[K
+      |                                 [32m[K%ld[m[K

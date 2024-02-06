@@ -17,11 +17,12 @@
 #include <cstdlib>
 #include <complex>
 #include <valarray>
+#include <ros/ros.h>
 
 typedef std::complex<float> Complex;
 typedef std::valarray<Complex> CArray;
 // Function Declarations
-std::vector<Complex> ik3001(const Complex endPos[3]);
+CArray ik3001(const Complex endPos[3]);
 
 #endif
 // End of code generation (ik3001.h)

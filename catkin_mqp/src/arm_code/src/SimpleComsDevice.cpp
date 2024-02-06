@@ -96,8 +96,9 @@ void SimpleComsDevice::writeFloats(int id, std::vector<Complex> values, bool pol
         FloatPacketType pt = FloatPacketType(id, 64);
     //if (!polling)//TODO: it's not gonna go here
         //pt.oneShotMode(); 
-    for (int i = 0; i < (pt.getDownstream()).size() && i < values.size(); i++)
+    for (int i = 0; i < (pt.getDownstream()).size() && i < values.size(); i++){
         pt.getDownstream()[i] = floatvalues[i]; 
+    }
     addPollingPacket(pt);
     try {
         std::this_thread::sleep_for(std::chrono::milliseconds(10));

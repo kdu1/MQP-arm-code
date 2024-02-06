@@ -131,8 +131,15 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/vboxuser/catkin_mqp/src/build/gtest/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_dev/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_ros_pkgs/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/arm_sim/cmake_install.cmake")
   include("/home/vboxuser/catkin_mqp/src/build/arm_code/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_msgs/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_ros/cmake_install.cmake")
   include("/home/vboxuser/catkin_mqp/src/build/tut/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_plugins/cmake_install.cmake")
+  include("/home/vboxuser/catkin_mqp/src/build/gazebo_ros_pkgs/gazebo_ros_control/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,4 @@
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/arm_code/arm_code
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/pkgconfig/arm_code.pc
+Symlinking /home/vboxuser/catkin_mqp/devel/share/arm_code/cmake/arm_codeConfig-version.cmake
+Symlinking /home/vboxuser/catkin_mqp/devel/share/arm_code/cmake/arm_codeConfig.cmake

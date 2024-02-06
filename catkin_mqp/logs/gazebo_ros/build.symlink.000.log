@@ -1,0 +1,14 @@
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/libgazebo_ros_paths_plugin.so
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/libgazebo_ros_api_plugin.so
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/python3/dist-packages/gazebo_ros/__init__.py
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/python3/dist-packages/gazebo_ros/cfg/PhysicsConfig.py
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/python3/dist-packages/gazebo_ros/cfg/__init__.py
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/gazebo_ros/spawn_model
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/gazebo_ros/cmake.lock
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/pkgconfig/gazebo_ros.pc
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros/docs/PhysicsConfig.dox
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros/docs/PhysicsConfig.wikidoc
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros/docs/PhysicsConfig-usage.dox
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros/cmake/gazebo_rosConfig.cmake
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros/cmake/gazebo_rosConfig-version.cmake
+Symlinking /home/vboxuser/catkin_mqp/devel/include/gazebo_ros/PhysicsConfig.h

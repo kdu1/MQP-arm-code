@@ -1,0 +1,5 @@
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/libdefault_robot_hw_sim.so
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/libgazebo_ros_control.so
+Symlinking /home/vboxuser/catkin_mqp/devel/lib/pkgconfig/gazebo_ros_control.pc
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros_control/cmake/gazebo_ros_controlConfig-version.cmake
+Symlinking /home/vboxuser/catkin_mqp/devel/share/gazebo_ros_control/cmake/gazebo_ros_controlConfig.cmake

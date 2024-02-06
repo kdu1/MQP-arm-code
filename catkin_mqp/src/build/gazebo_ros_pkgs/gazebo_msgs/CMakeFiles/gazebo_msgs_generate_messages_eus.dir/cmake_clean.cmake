@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../../devel/share/roseus/ros/gazebo_msgs/manifest.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ContactState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ContactsState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/LinkState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/LinkStates.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ModelState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ModelStates.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ODEJointProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/ODEPhysics.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/PerformanceMetrics.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/SensorPerformanceMetric.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/msg/WorldState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/ApplyBodyWrench.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/ApplyJointEffort.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/BodyRequest.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/DeleteLight.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/DeleteModel.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetJointProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetLightProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetLinkProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetLinkState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetModelProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetModelState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetPhysicsProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/GetWorldProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/JointRequest.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetJointProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetJointTrajectory.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetLightProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetLinkProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetLinkState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetModelConfiguration.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetModelState.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SetPhysicsProperties.l"
+  "../../devel/share/roseus/ros/gazebo_msgs/srv/SpawnModel.l"
+  "CMakeFiles/gazebo_msgs_generate_messages_eus"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/gazebo_msgs_generate_messages_eus.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

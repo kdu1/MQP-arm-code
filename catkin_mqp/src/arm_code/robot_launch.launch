@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="arm_code" pkg="arm_code" type="Robot.cpp" output="screen" launch-prefix="gdb -ex run --args"/>
+</launch>

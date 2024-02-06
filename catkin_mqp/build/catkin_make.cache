@@ -1,2 +1,2 @@
-arm_code:tut
+arm_code:arm_sim:gazebo_ros_pkgs/gazebo_dev:gazebo_ros_pkgs/gazebo_msgs:gazebo_ros_pkgs/gazebo_plugins:gazebo_ros_pkgs/gazebo_ros:gazebo_ros_pkgs/gazebo_ros_control:gazebo_ros_pkgs/gazebo_ros_pkgs:tut
 -DCATKIN_DEVEL_PREFIX=/home/vboxuser/catkin_mqp/devel -DCMAKE_INSTALL_PREFIX=/home/vboxuser/catkin_mqp/install -G Unix Makefiles

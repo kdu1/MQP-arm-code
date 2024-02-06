@@ -19,6 +19,7 @@
 #include <cmath>
 #include <complex>
 #include <valarray>
+#include <ros/ros.h>
 
 typedef std::complex<float> Complex;
 typedef std::valarray<Complex> CArray;
@@ -26,8 +27,8 @@ typedef std::valarray<Complex> CArray;
 
 //has to do with CArray being the same one from robot
 // Function Declarations
-CArray cubic_traj(double tf, std::vector<double> vi, std::vector<double> vf,
-                                        std::vector<double> pi, std::vector<double> pf);
+CArray cubic_traj(float tf, std::vector<float> vi, std::vector<float> vf,
+                                        std::vector<float> pi, std::vector<float> pf);
 
 #endif
 // End of code generation (cubic_traj.h)

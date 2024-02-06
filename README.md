@@ -2,7 +2,10 @@
 
 Code for arms for social robot MQP. 
 All the important code so far is in the catkin_mqp folder in the src/arm_code/src folder. 
-The main file is Robot.cpp, with functions for writing to the hid device using hidapi in SimpleComsDevice.cpp
+The main file is Robot.cpp, with functions for writing to the hid device using hidapi in SimpleComsDevice.cpp. Can ignore all gazebo stuff.
+
+## issues:
+Rosrun on the arm_code node keeps returning memory allocation errors. 
 
 ## On hidapi:
 Must add "hidapi-libusb" to target_link_libraries statement in CMakeLists.txt:

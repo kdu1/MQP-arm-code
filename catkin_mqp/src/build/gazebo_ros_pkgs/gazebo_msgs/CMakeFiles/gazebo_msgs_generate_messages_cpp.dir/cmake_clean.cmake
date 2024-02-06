@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "../../devel/include/gazebo_msgs/ApplyBodyWrench.h"
+  "../../devel/include/gazebo_msgs/ApplyJointEffort.h"
+  "../../devel/include/gazebo_msgs/BodyRequest.h"
+  "../../devel/include/gazebo_msgs/ContactState.h"
+  "../../devel/include/gazebo_msgs/ContactsState.h"
+  "../../devel/include/gazebo_msgs/DeleteLight.h"
+  "../../devel/include/gazebo_msgs/DeleteModel.h"
+  "../../devel/include/gazebo_msgs/GetJointProperties.h"
+  "../../devel/include/gazebo_msgs/GetLightProperties.h"
+  "../../devel/include/gazebo_msgs/GetLinkProperties.h"
+  "../../devel/include/gazebo_msgs/GetLinkState.h"
+  "../../devel/include/gazebo_msgs/GetModelProperties.h"
+  "../../devel/include/gazebo_msgs/GetModelState.h"
+  "../../devel/include/gazebo_msgs/GetPhysicsProperties.h"
+  "../../devel/include/gazebo_msgs/GetWorldProperties.h"
+  "../../devel/include/gazebo_msgs/JointRequest.h"
+  "../../devel/include/gazebo_msgs/LinkState.h"
+  "../../devel/include/gazebo_msgs/LinkStates.h"
+  "../../devel/include/gazebo_msgs/ModelState.h"
+  "../../devel/include/gazebo_msgs/ModelStates.h"
+  "../../devel/include/gazebo_msgs/ODEJointProperties.h"
+  "../../devel/include/gazebo_msgs/ODEPhysics.h"
+  "../../devel/include/gazebo_msgs/PerformanceMetrics.h"
+  "../../devel/include/gazebo_msgs/SensorPerformanceMetric.h"
+  "../../devel/include/gazebo_msgs/SetJointProperties.h"
+  "../../devel/include/gazebo_msgs/SetJointTrajectory.h"
+  "../../devel/include/gazebo_msgs/SetLightProperties.h"
+  "../../devel/include/gazebo_msgs/SetLinkProperties.h"
+  "../../devel/include/gazebo_msgs/SetLinkState.h"
+  "../../devel/include/gazebo_msgs/SetModelConfiguration.h"
+  "../../devel/include/gazebo_msgs/SetModelState.h"
+  "../../devel/include/gazebo_msgs/SetPhysicsProperties.h"
+  "../../devel/include/gazebo_msgs/SpawnModel.h"
+  "../../devel/include/gazebo_msgs/WorldState.h"
+  "CMakeFiles/gazebo_msgs_generate_messages_cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

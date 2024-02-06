@@ -4,6 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/arm_code.dir/src/FloatPacketType.cpp.o"
   "CMakeFiles/arm_code.dir/src/Robot.cpp.o"
   "CMakeFiles/arm_code.dir/src/SimpleComsDevice.cpp.o"
+  "CMakeFiles/arm_code.dir/src/cubic_traj.cpp.o"
+  "CMakeFiles/arm_code.dir/src/ik3001.cpp.o"
+  "CMakeFiles/arm_code.dir/src/rt_nonfinite.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
